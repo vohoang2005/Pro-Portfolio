@@ -103,8 +103,7 @@ footer {
     text-align: center;
   }
 }
-
-.resources a p{
+.resources a p {
   display: none;
 }
 
@@ -112,10 +111,6 @@ footer {
   display: block;
 }
 
-.resources ul < li < ul {
-  display: none;
-}
-
-.resources li:hover < ul {
-  display: blocks;
+.hide {
+  list-style-type: none;
 }
