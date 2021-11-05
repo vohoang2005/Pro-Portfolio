@@ -66,3 +66,25 @@ header h1 {
   }
 
   /* Header and Nav styles End */
+  
+  /* About Me Style Starts */
+  .hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    background-color: var(--background-color);
+  }
+
+  .hero-cta {
+    width: 35%;
+    text-align: center;
+    margin: 3.5%;
+    color: black;
+    font-size: 18px;
+    line-height: 1.2;
+  }
