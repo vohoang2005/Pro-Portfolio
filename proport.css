@@ -33,6 +33,13 @@ header h1 {
     color: var(--inside-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+  .charmander {
+    width: 200px;
+    height: auto;
+    margin: auto auto auto 50px;
+
+  }
   
   header a {
     text-decoration: none;
