@@ -17,13 +17,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../pro-portfolio/assets/images/designer\ background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 50%;
 }
 
 header h1 {
@@ -32,66 +31,81 @@ header h1 {
     font-size: 36px;
     color: var(--inside-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+}
+/* Styling Charmander */
+.charmander {
+  width: 200px;
+  height: auto;
+  margin: auto auto auto 50px;
 
-  .charmander {
-    width: 200px;
-    height: auto;
-    margin: auto auto auto 50px;
+}
 
-  }
-  
-  header a {
-    text-decoration: none;
-    color: var(--inside-color);
-  }
-  
-  header nav {
-    margin: 7px 0;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  header nav ul li a:hover {
-    background: var(--inside-color);
-    color: var(--background-color);
-    border-radius: 15px;
-    text-shadow: none;
-  }
+header a {
+  text-decoration: none;
+  color: var(--inside-color);
+}
 
-  /* Header and Nav styles End */
-  
-  /* About Me Style Starts */
-  .hero {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-    background-color: var(--background-color);
-  }
+header nav {
+  margin: 7px 0;
+}
 
-  .hero-cta {
-    width: 35%;
-    text-align: center;
-    margin: 3.5%;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--inside-color);
+  color: var(--background-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* About Me Style Starts */
+.hero {
+  background-image: url('..//pro-portfolio/assets/images/designer\ background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-attachment: fixed;
+  background-position: 80%;
+  background-color: var(--background-color);
+  
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: center;
+  margin: 3.5%;
+  color: var(--inside-color);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.ux {
+  margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
     color: black;
-    font-size: 18px;
-    line-height: 1.2;
-  }
+    position: absolute;
+    justify-content: right;
+}
+
+.first {
+  height: 600px;
+  width: auto;
+  justify-content: right;
+}
