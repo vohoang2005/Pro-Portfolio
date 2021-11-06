@@ -128,7 +128,7 @@ transition: transform 200ms ease-in;
   transform: scaleY(1);
 }
 
-.chuong h2 {
+.chuong h1 {
   color: #ee6352;
 }
 
@@ -175,8 +175,7 @@ transition: transform 200ms ease-in;
 p {
   margin: 0;
   padding: 0;
-  text-align: justify;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 /* Styling the Navigation 
