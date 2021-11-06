@@ -9,14 +9,13 @@
     margin: 0;
     padding: 0;
 }
-
 /* Styling the font of Chuong Vo Portfolio */
 .fancy-link {
   font-size: 40px;
   font-weight: bold;
   justify-content: space-between;
 }
-
+/* Styling the Background Image for the navigation */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +28,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
- 
 }
 /* Styling Chuong Vo Portfolio */
 .fancy-link {
@@ -37,7 +35,6 @@
   color: #ee6352;
   position: relative;
 }
-
 .fancy-link::after {
 content: '';
 position: absolute;
@@ -50,12 +47,15 @@ transform: scaleX(.01);
 transform-origin: left;
 transition: transform 200ms ease-in;
 }
-
 .fancy-link:hover::after {
   transform: scaleX(1);
 }
-
-
+/* Remove underline for Navigation and color  set to White */
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+/* Styling the Navigation */
 .button {
   border: 1px solid #3498ab;
   background: none;
@@ -64,16 +64,12 @@ transition: transform 200ms ease-in;
   cursor: pointer;
   margin: 10px;
 }
-
 .button-zero {
   color: #3498db;
 }
-
 .button-zero:hover {
   color: #fff
 }
-
-
 .button {
   cursor: pointer;
   border: 0;
@@ -83,11 +79,9 @@ transition: transform 200ms ease-in;
   position: relative;
   z-index: 1;
 }
-
 .button + .button {
   margin-left: 1em;
 }
-
 .button::after {
   content: "";
   position: absolute;
@@ -99,41 +93,33 @@ transition: transform 200ms ease-in;
   z-index: -1;
   transition: transform 200ms ease-in;
 }
-
 .button-one::after {
   transform: scaleX(0);
   transform-origin: right;
 }
-
 .button-one:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-
 .button-two::after {
   transform: scaleY(0);
   transform-origin: bottom;
 }
-
 .button-two:hover::after {
   transform: scaleY(1);
   transform-origin: top;
 }
-
 .button-three::after {
   transform: scaleY(0);
 }
-
 .button-three:hover::after {
   transform: scaleY(1);
 }
-
 .chuong h1 {
   color: #ee6352;
 }
-
+/* Styling About Me Content */
 .bg-image {
-  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -142,10 +128,9 @@ transition: transform 200ms ease-in;
   background-image: url("../Pro-Portfolio/assets/images/ui-ux.jpeg");
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   margin: auto;
 }
-
 .chuong {
   position: absolute;
   top: 30%;
@@ -156,10 +141,7 @@ transition: transform 200ms ease-in;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 50px rgba(0,0,0,.2);
-  
-  
 }
-
 .circle {
   width: 200px;
   height: 200px;
@@ -169,81 +151,55 @@ transition: transform 200ms ease-in;
   float: left;
   shape-outside: circle();
   margin: 30px 30px 30px 0;
-
 }
-
 p {
   margin: 0;
   padding: 0;
   line-height: 20px;
 }
-
-/* Styling the Navigation 
-header a {
-  text-decoration: line;
-  color: var(--inside-color);
+.projects {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 20px;
+  margin: 1px;
 }
- /* Positioning the Navigation 
-header nav {
-  margin: 20px 0;
-}
- /* Styling the navigation 
-header nav ul {
+.My-Projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-}
-
-header nav ul li a:hover {
-  background: var(--inside-color);
-  color: lightcoral;
-  border-radius: 15px;
-  text-shadow: none;
-}
-
-/* About Me Style Starts 
-.hero {
-  background-image: url('..//pro-portfolio/assets/images/designer\ background.jpg');
-  background-size: cover;
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  background-attachment: fixed;
-  background-position: 80%;
-  background-color: var(--background-color);
-  
+  background: coral;
+  font-family: consolas;
+  padding: 0;
+  margin: 0 30%;
+  height: 60px;
+  width: 40%;  
 }
-
-.hero-cta {
-  width: 35%;
-  text-align: center;
-  margin: 3.5%;
-  color: var(--inside-color);
-  font-size: 18px;
-  line-height: 1.2;
+.projects h3 {
+  position: relative; left: 150px;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  width: 50%;
 }
-
-.ux {
-  margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-    color: black;
-    position: absolute;
-    justify-content: right;
+.projects h3:hover {
+  color: #255784;
+  background: #80f321;
+  box-shadow: 0 0 10px #1ef33a, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0s;
 }
-
-.first {
-  height: 600px;
-  width: auto;
-  justify-content: right;
+.robot {
+  position:absolute; left:-50%;
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  object-fit: cover;
+  object-position: top right;
 }
