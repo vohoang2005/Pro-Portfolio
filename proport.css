@@ -9,11 +9,9 @@
     margin: 0;
     padding: 0;
 }
-
-/* Header and Nav Styles Start */
+/* Header Styles */
 header {
     padding: 20px 35px;
-    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,33 +20,30 @@ header {
     background-image: url("../pro-portfolio/assets/images/designer\ background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 50%;
+    background-position: 80%;
 }
-
+/* Styling Chuong Vo Portfolio */
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
-    color: var(--inside-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
 }
 /* Styling Charmander */
 .charmander {
   width: 200px;
   height: auto;
   margin: auto auto auto 50px;
-
 }
-
+/* Styling the Navigation */
 header a {
-  text-decoration: none;
+  text-decoration: line;
   color: var(--inside-color);
 }
-
+/* Positioning the Navigation */
 header nav {
-  margin: 7px 0;
+  margin: 20px 0;
 }
-
+/* Styling the navigation */
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -61,14 +56,13 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
   background: var(--inside-color);
-  color: var(--background-color);
+  color: lightcoral;
   border-radius: 15px;
-  text-shadow: none;
+
 }
 
 /* About Me Style Starts */
