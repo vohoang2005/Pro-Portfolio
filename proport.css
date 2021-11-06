@@ -231,19 +231,39 @@ p {
   height: 250px;
   width: 600px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 620px auto;
   object-fit: cover;
   object-position: top right;
   bottom: -15px;
 }
 .horiseonword {
-  width: 50%;
-  position: absolute; top: 135%;
+  width: 46%;
+  position: absolute; top: 140%;
 }
+/* Styling Run-Buddy Content */
+.runbuddyproject .runbuddyword h1, h2 {
 
-
+  position: relative; 
+  text-align: center;
+  color: red;
+  font-family: 'lobster', cursive;
+  font-weight:lighter;
+  font-size: medium;
+}
+.runbuddy {
+  position: absolute; top: -106px;
+  height: 250px;
+  width: 600px;
+  display: flex;
+  margin: 1199px 0 0 955px;
+  object-fit: cover;
+  object-position: top right;
+  
+}
+.runbuddyword {
+  width: 155%;
+  position: absolute; top: 140%;
+}
 
 
 
