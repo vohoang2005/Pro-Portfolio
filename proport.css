@@ -195,6 +195,7 @@ p {
   box-shadow: 0 0 10px #1ef33a, 0 0 40px #2196f3, 0 0 80px #2196f3;
   transition-delay: 0s;
 }
+/* Styling the Robot Content */
 .robot {
   position:absolute; left:-50%;
   height: 500px;
@@ -202,4 +203,171 @@ p {
   display: flex;
   object-fit: cover;
   object-position: top right;
+}
+
+.robotword {
+  width: 100%;
+  position: absolute;
+  margin-top: auto;
+}
+.robotword h1, h2 {
+  text-align: center;
+  color: lightblue;
+  font-size: 30px;
+  font-family: 'lobster', cursive;
+}
+/* Styling Horiseon Content */
+.horiseonproject .horiseonword h1, h2 {
+
+  position: relative; 
+  text-align: center;
+  color: red;
+  font-family: 'lobster', cursive;
+  font-weight:lighter;
+  font-size: medium;
+}
+.horiseon {
+  position: relative; right: 15.599999999999999999999999%;
+  height: 250px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 620px auto;
+  object-fit: cover;
+  object-position: top right;
+  bottom: -15px;
+}
+.horiseonword {
+  width: 50%;
+  position: absolute; top: 135%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER 
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
 }
