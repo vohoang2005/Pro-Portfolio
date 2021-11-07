@@ -9,12 +9,12 @@
   margin: 0;
   padding: 0;
 }
+html {
+background-image: url("./assets/images/followbg.jpg");
+background-size: cover;
+background-attachment: fixed;
+background-position: 80%;
 
-/* Styling the font of Chuong Vo Portfolio */
-.fancy-link {
-font-size: 40px;
-font-weight: bold;
-justify-content: space-between;
 }
 /* Styling the Background Image for the Navigations */
 .content {
@@ -35,11 +35,13 @@ position: -webkit-sticky;
 /* Styling Chuong Vo Portfolio */
 .fancy-link {
 text-decoration: none;
-color: #ffff;
+color: #255784;
 position: relative;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+font-size: 40px;
+font-weight: bold;
 
 }
 .fancy-link::after {
@@ -133,6 +135,7 @@ transform: scaleY(1);
   background-attachment: fixed;
   background-position: 80%;
   font-family: 'Roboto', sans-serif;
+  flex-wrap: wrap;
 }
 
 .About-MePara1 {
@@ -144,10 +147,12 @@ transform: scaleY(1);
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  flex-wrap: wrap;
+
 }
 
 .About-Me .About-MePara1 p {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   color: darkslateblue;
   display: flex;
@@ -155,6 +160,8 @@ transform: scaleY(1);
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
+  flex-wrap: wrap;
+ 
 
 }
 
@@ -173,18 +180,25 @@ transform: scaleY(1);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffff
 }
 .About-MePara3 {
   flex: 4;
   padding: 30px;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 .About-MePara4 {
   flex: 4;
   padding: 30px;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* Style the Projects Section */
 .Projects {
@@ -201,7 +215,7 @@ transform: scaleY(1);
   display: flex;
   background: coral;
   font-family: 'Roboto', sans-serif;
-  
+  flex-wrap: wrap;
 }
 .Projects h2 {
   color: #2196f3;
@@ -209,8 +223,11 @@ transform: scaleY(1);
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
- 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -100px;
 }
+
 .Projects h2:hover {
   color: #255784;
   background: #80f321;
@@ -224,7 +241,7 @@ transform: scaleY(1);
 /* Styling the Images */
 .first-img {
   display: flex;
-  flex-wrap: row;
+  flex-wrap: flex;
   flex-direction: column;
   align-items: right;
   justify-content: right;
@@ -234,7 +251,7 @@ transform: scaleY(1);
 
 .second-img {
   display: flex;
-  flex-wrap: row;
+  flex-wrap: flex;
   flex-direction: row;
   align-items: right;
   justify-content: right;
@@ -280,6 +297,8 @@ footer{
   font-family: "Open Sans";
   padding-top: 0px;
   color: coral;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer-content{
   display: flex;
@@ -294,18 +313,23 @@ footer{
   width: 600px;
   padding: 160px;
   margin: 1px;
+  flex-wrap: wrap;
 }
 .footer-content h3{
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 3rem; 
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer-content p{
   max-width: 500px;
   margin: auto;
   line-height: 28px;
   font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .socials{
   list-style: none;
@@ -313,71 +337,50 @@ footer{
   align-items: center;
   justify-content: center;
   margin: 1rem 0 3rem 0;
+  flex-wrap: wrap;
 }
 .socials li{
   margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .socials a{
   text-decoration: none;
   color: coral;
+  display: flex;
+  flex-wrap: wrap;
  
 }
 .socials a i{
   font-size: 1.1rem;
   transition: color .4s ease;
+  display: flex;
+  flex-wrap: wrap;
 }
 .socials a:hover i{
   color: aqua;
-}
-/* setting mediaqueries for devices screen */
-@media screen and (max-width: 300px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-  header .bg-images {
-    width: 100%;
-    text-align: center;
-}
-  .About-Me .About-MePara2 {
-    text-align: center;
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-  p {
-    font-size: 14px;
-    padding: 0px 20px;
-    line-height: 22px;
-}
-  img {
-    width: 300px;
-}  
 
 @media screen and (max-width: 1000px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-}
+footer {
+  display: flex;
+  position: absolute; left: 250px;
+  margin: 700px auto;
+  }
+.img-area {
+  padding-left: 500px;
+  position:absolute; left: -500px
+ 
 
-  header .bg-images {
-    width: 100%;
-    text-align: center;
-}
-  .About-Me .About-MePara2 {
-    text-align: center;
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-  p {
-    font-size: 14px;
-    padding: 0px 20px;
-    line-height: 22px;
-}
-  img {
-    width: 300px;
+  }
 } 
+
+@media screen and (max-width: 700px) {
+  footer {
+    display: flex;
+    position: absolute; left: 200px;
+    }
+  } 
