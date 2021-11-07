@@ -116,7 +116,7 @@ a {
   transform: scaleY(1);
 }
 .chuong h1 {
-  color: #ee6352;
+  color: #f71f02;
 }
 /* Styling About Me Content */
 .bg-image {
@@ -127,6 +127,8 @@ a {
   font-family: sans-serif;
   background-image: url("../Pro-Portfolio/assets/images/ui-ux.jpeg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
   width: 100%;
   height: 40vh;
   margin: auto;
@@ -141,6 +143,15 @@ a {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 50px rgba(0,0,0,.2);
+  background-color: salmon;
+}
+
+.bg-images {
+  background-image: url("./assets/images/ui-ux.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+
 }
 .circle {
   width: 200px;
@@ -151,10 +162,9 @@ a {
   float: left;
   shape-outside: circle();
   margin: 30px 30px 30px 0;
+  
 }
 p {
-  margin: 0;
-  padding: 0;
   line-height: 20px;
 }
 .projects {
@@ -163,8 +173,8 @@ p {
   left: 50%;
   transform: translate(-50%,-50%);
   width: 600px;
-  padding: 20px;
-  margin: 1px;
+  padding: 60px;
+  margin: 0;
 }
 .My-Projects {
   display: flex;
@@ -203,6 +213,7 @@ p {
   display: flex;
   object-fit: cover;
   object-position: top right;
+  
 }
 
 .robotword {
@@ -238,7 +249,7 @@ p {
 }
 .horiseonword {
   width: 46%;
-  position: absolute; top: 140%;
+  position: absolute; top: 138%;
 }
 /* Styling Run-Buddy Content */
 .runbuddyproject .runbuddyword h1, h2 {
@@ -246,8 +257,7 @@ p {
   position: relative; 
   text-align: center;
   color: red;
-  font-family: 'lobster', cursive;
-  font-weight:lighter;
+  font-family:'Times New Roman', Times, serif;
   font-size: medium;
 }
 .runbuddy {
@@ -255,14 +265,17 @@ p {
   height: 250px;
   width: 600px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1199px 0 0 955px;
   object-fit: cover;
   object-position: top right;
   
 }
 .runbuddyword {
-  width: 155%;
-  position: absolute; top: 140%;
+  max-width: 10%;
+  position: absolute; top: 10%;
+  margin: 1199px 0 1000px 955px;
 }
 
 
@@ -271,6 +284,86 @@ p {
 
 
 
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  bottom: -650px;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: coral;
+    background-image: url("./assets/images/ui-ux.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("./assets/images/ui-ux.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 60px;
+  margin: 0;
+
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  
+}
+.footer-content p{
+  max-width: 500px;
+  margin: auto;
+  line-height: 28px;
+  font-size: 14px;
+  
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: coral;
+  
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+
+}
 
 
 
