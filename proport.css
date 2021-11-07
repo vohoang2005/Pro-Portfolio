@@ -16,7 +16,7 @@ font-size: 40px;
 font-weight: bold;
 justify-content: space-between;
 }
-/* Styling the Background Image for the navigation */
+/* Styling the Background Image for the Navigations */
 .content {
 display: flex;
 flex-wrap: wrap;
@@ -186,7 +186,7 @@ transform: scaleY(1);
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
-
+/* Style the Projects Section */
 .Projects {
   position: absolute; left: 100px;
   justify-content: flex-start;
@@ -271,10 +271,8 @@ transform: scaleY(1);
   transition: .9;
   display: flex;
 }
+/* Styling the footer */
 footer{
-  
- 
-  
   position: absolute; top: 1000px;
   bottom: -650px;
   height: 10vw;
@@ -296,21 +294,18 @@ footer{
   width: 600px;
   padding: 160px;
   margin: 1px;
-
 }
 .footer-content h3{
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
-  line-height: 3rem;
-  
+  line-height: 3rem; 
 }
 .footer-content p{
   max-width: 500px;
   margin: auto;
   line-height: 28px;
   font-size: 14px;
-  
 }
 .socials{
   list-style: none;
@@ -325,37 +320,64 @@ footer{
 .socials a{
   text-decoration: none;
   color: coral;
-  
+ 
 }
 .socials a i{
   font-size: 1.1rem;
   transition: color .4s ease;
-
 }
 .socials a:hover i{
   color: aqua;
-
+}
+/* setting mediaqueries for devices screen */
+@media screen and (max-width: 300px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-  .About-Me {
-    flex-direction: column;
-  
+  header .bg-images {
+    width: 100%;
+    text-align: center;
 }
+  .About-Me .About-MePara2 {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+  p {
+    font-size: 14px;
+    padding: 0px 20px;
+    line-height: 22px;
+}
+  img {
+    width: 300px;
+}  
+
+@media screen and (max-width: 1000px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+
+  header .bg-images {
+    width: 100%;
+    text-align: center;
+}
+  .About-Me .About-MePara2 {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+  p {
+    font-size: 14px;
+    padding: 0px 20px;
+    line-height: 22px;
+}
+  img {
+    width: 300px;
+} 
