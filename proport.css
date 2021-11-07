@@ -1,7 +1,7 @@
 /* setting the default color with var */
 :root {
-  --inside-color: yellow;
-  --background-color: pink;
+  --inside-color: #2196f3;
+  --background-color: #ffff;
 }
 /* setting the box sizing style */
 * {
@@ -35,7 +35,7 @@ position: -webkit-sticky;
 /* Styling Chuong Vo Portfolio */
 .fancy-link {
 text-decoration: none;
-color: #255784;
+color: var(--inside-color);
 position: relative;
 display: flex;
 flex-wrap: wrap;
@@ -61,12 +61,12 @@ transform: scaleX(1);
 }
 /* Remove underline for Navigation and color  set to White */
 a {
-color: #ffff;
+color: var(--background-color);
 text-decoration: none;
 }
 /* Styling the Navigation */
 .button {
-border: 1px solid #3498ab;
+border: 1px solid var(--inside-color);
 background: none;
 padding: 10px 20px;
 font-size: 20px;
@@ -74,16 +74,16 @@ cursor: pointer;
 margin: 10px;
 }
 .button-zero {
-color: #3498db;
+color: var(--inside-color);
 }
 .button-zero:hover {
-color: #fff
+color: var(--background-color)
 }
 .button {
 cursor: pointer;
 border: 0;
-background: #3498db;
-color: white;
+background: var(--inside-color);
+color: var(--background-color);
 padding: 1em 1.5em;
 position: relative;
 z-index: 1;
@@ -128,7 +128,6 @@ transform: scaleY(1);
 .About-Me {
   width: 100%;
   display: flex;
-  background: #ffc728;
   padding: 0px;
   background-image: url("./assets/images/followbg.jpg");
   background-size: cover;
@@ -154,19 +153,18 @@ transform: scaleY(1);
 .About-Me .About-MePara1 p {
   font-size: 30px;
   font-weight: bold;
-  color: darkslateblue;
+  color: var(--inside-color);
   display: flex;
   text-transform: uppercase;
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
   flex-wrap: wrap;
- 
 
 }
 
 .About-Me .About-MePara1 p:hover {
-  color: #255784;
+  color: var(--inside-color);
   background: #80f321;
   box-shadow: 0 0 10px #1ef33a, 0 0 40px #2196f3, 0 0 80px #2196f3;
   transition-delay: 0s;
@@ -176,13 +174,13 @@ transform: scaleY(1);
 .About-MePara2 {
   flex: 4;
   padding: 30px;
-  font-size: 12px;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
   display: flex;
   flex-wrap: wrap;
-  color: #ffff
+  color: var(--background-color)
 }
 .About-MePara3 {
   flex: 4;
@@ -203,40 +201,48 @@ transform: scaleY(1);
 /* Style the Projects Section */
 .Projects {
   position: absolute; left: 100px;
-  justify-content: flex-start;
-  margin: 140px 0 0 0;
+  justify-content: center;
+  margin: 300px 0 0 200px;
   font-size: 20px;
   display: flex;
   transform: translate(-50%, -50%);
   flex-wrap: wrap; 
 
+
 }
 .My-Projects {
   display: flex;
-  background: coral;
   font-family: 'Roboto', sans-serif;
   flex-wrap: wrap;
+  
 }
 .Projects h2 {
-  color: #2196f3;
+  color: var(--inside-color);
   text-transform: uppercase;
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -100px;
+  width: 350px; height: 100px;
+  margin: 0 -200px;
+  
+ 
 }
-
 .Projects h2:hover {
-  color: #255784;
-  background: #80f321;
+  color: var(--inside-color);
+  background: darkslateblue;
   box-shadow: 0 0 10px #1ef33a, 0 0 40px #2196f3, 0 0 80px #2196f3;
   transition-delay: 0s;
 }
 .Projects h2 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+.Projects p {
+  color: var(--background-color);
+  margin: 50px 0 0 -150px;
 }
 /* Styling the Images */
 .first-img {
@@ -290,8 +296,8 @@ transform: scaleY(1);
 }
 /* Styling the footer */
 footer{
-  position: absolute; top: 1000px;
-  bottom: -650px;
+  position: absolute; top: 1200px;
+  bottom: -450px;
   height: 10vw;
   width: 0;
   font-family: "Open Sans";
@@ -299,6 +305,7 @@ footer{
   color: coral;
   display: flex;
   flex-wrap: wrap;
+  margin: auto 300px;
 }
 .footer-content{
   display: flex;
