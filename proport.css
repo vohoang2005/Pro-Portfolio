@@ -169,7 +169,7 @@ transform: scaleY(1);
 .About-MePara2 {
   flex: 4;
   padding: 30px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
@@ -272,17 +272,15 @@ transform: scaleY(1);
   display: flex;
 }
 footer{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: absolute; top: 400px;
+  
+ 
+  
+  position: absolute; top: 1000px;
   bottom: -650px;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 100vw;
+  height: 10vw;
+  width: 0;
   font-family: "Open Sans";
-  padding-top: 40px;
+  padding-top: 0px;
   color: coral;
 }
 .footer-content{
