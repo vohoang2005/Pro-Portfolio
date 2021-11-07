@@ -132,8 +132,8 @@ transform: scaleY(1);
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  font-family: 'Roboto', sans-serif;
 }
-
 
 .About-MePara1 {
   flex: 1;
@@ -145,11 +145,34 @@ transform: scaleY(1);
   background-attachment: fixed;
   background-position: 80%;
 }
+
+.About-Me .About-MePara1 p {
+  font-size: 24px;
+  font-weight: bold;
+  color: darkslateblue;
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+
+}
+
+.About-Me .About-MePara1 p:hover {
+  color: #255784;
+  background: #80f321;
+  box-shadow: 0 0 10px #1ef33a, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0s;
+  transform: translate(50%, -120%);
+}
+
 .About-MePara2 {
   flex: 4;
   padding: 30px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
 }
 .About-MePara3 {
   flex: 4;
