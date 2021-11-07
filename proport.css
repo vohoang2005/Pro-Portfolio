@@ -28,12 +28,18 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  position: sticky;
+  position: -webkit-sticky;
 }
 /* Styling Chuong Vo Portfolio */
 .fancy-link {
   text-decoration: none;
   color: #ee6352;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 .fancy-link::after {
 content: '';
@@ -152,6 +158,8 @@ a {
   background-attachment: fixed;
   background-position: 80%;
 
+
+
 }
 .circle {
   width: 200px;
@@ -165,6 +173,8 @@ a {
   
 }
 p {
+  margin: 0;
+  padding: 0;
   line-height: 20px;
 }
 .projects {
@@ -173,8 +183,12 @@ p {
   left: 50%;
   transform: translate(-50%,-50%);
   width: 600px;
-  padding: 60px;
-  margin: 0;
+  padding: 20px;
+  margin: 1px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  
 }
 .My-Projects {
   display: flex;
@@ -198,6 +212,7 @@ p {
   overflow: hidden;
   transition: 0.2s;
   width: 50%;
+  
 }
 .projects h3:hover {
   color: #255784;
@@ -224,18 +239,17 @@ p {
 .robotword h1, h2 {
   text-align: center;
   color: lightblue;
-  font-size: 30px;
-  font-family: 'lobster', cursive;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 /* Styling Horiseon Content */
-.horiseonproject .horiseonword h1, h2 {
+.horiseonword h1, h2 {
 
   position: relative; 
   text-align: center;
   color: red;
-  font-family: 'lobster', cursive;
-  font-weight:lighter;
-  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 .horiseon {
   position: relative; right: 15.599999999999999999999999%;
@@ -250,15 +264,16 @@ p {
 .horiseonword {
   width: 46%;
   position: absolute; top: 138%;
+  font-family: 'Times New Roman', Times, serif;
 }
 /* Styling Run-Buddy Content */
-.runbuddyproject .runbuddyword h1, h2 {
+.runbuddyword h1, h2 {
 
   position: relative; 
   text-align: center;
   color: red;
-  font-family:'Times New Roman', Times, serif;
-  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 .runbuddy {
   position: absolute; top: -106px;
@@ -271,27 +286,21 @@ p {
   object-fit: cover;
   object-position: top right;
   
+  
 }
 .runbuddyword {
   max-width: 10%;
   position: absolute; top: 10%;
   margin: 1199px 0 1000px 955px;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  padding: 160px; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: absolute;
   bottom: -650px;
   left: 0;
@@ -302,10 +311,11 @@ footer{
   font-family: "Open Sans";
   padding-top: 40px;
   color: coral;
-    background-image: url("./assets/images/ui-ux.jpeg");
+  background-image: url("./assets/images/ui-ux.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  padding: 2px 6px 4px 6px; color: coral; background-color: royalblue;
 }
 .footer-content{
   display: flex;
@@ -322,8 +332,8 @@ footer{
   left: 50%;
   transform: translate(-50%,-50%);
   width: 600px;
-  padding: 60px;
-  margin: 0;
+  padding: 160px;
+  margin: 1px;
 
 }
 .footer-content h3{
@@ -365,122 +375,31 @@ footer{
 
 }
 
-
-
-
-
-
-
-
-/*
-@media screen and (max-width: 980px) {
-  header {
+@media all and (max-width: 980px) {
+  body {
     padding-bottom: 0;
     justify-content: center;
     position: relative;
   }
 
-  header h1 {
+  body .content {
     width: 100%;
     text-align: center;
   }
 
-  header nav ul {
+  body .content a {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
   }
 
-  header nav ul li a {
-    font-size: 20px;
-  }
-
-  footer h2, footer div {
+  footer h3, footer ul {
     text-align: center;
     width: 100%;
   }
-
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
   
-  .hero-cta {
-    text-align: center;
-  }
-
-  .section-title {
-    width: 80%;
-  }
-  
-  .trainer {
+  .footer-content {
     flex: 0 70%;
   }
   
-  .contact-info iframe{
-    flex: 1 100%;
-  }
-}
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER 
-@media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
-  }
-
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
-
-  .trainer-bio h3, .trainer-bio h4 {
-    display: block;
-  }
-}
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
-@media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
-
-  .intro p {
-    width: 100%;
-  }
-
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
-  }
 }
