@@ -1,44 +1,45 @@
 /* setting the default color with var */
 :root {
-    --inside-color: yellow;
-    --background-color: pink;
+  --inside-color: yellow;
+  --background-color: pink;
 }
 /* setting the box sizing style */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 /* Styling the font of Chuong Vo Portfolio */
 .fancy-link {
-  font-size: 40px;
-  font-weight: bold;
-  justify-content: space-between;
+font-size: 40px;
+font-weight: bold;
+justify-content: space-between;
 }
 /* Styling the Background Image for the navigation */
 .content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-between;
-  padding: 0 15px;
-  align-items: center;
-  list-style: none;
-  background-image: url("./assets/images/ui-ux.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
-  position: sticky;
-  position: -webkit-sticky;
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+justify-content: space-between;
+padding: 0 15px;
+align-items: center;
+list-style: none;
+background-image: url("./assets/images/followbg.jpg");
+background-size: cover;
+background-attachment: fixed;
+background-position: 80%;
+position: sticky;
+position: -webkit-sticky;
 }
 /* Styling Chuong Vo Portfolio */
 .fancy-link {
-  text-decoration: none;
-  color: #ee6352;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+text-decoration: none;
+color: #ffff;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 
 }
 .fancy-link::after {
@@ -54,268 +55,212 @@ transform-origin: left;
 transition: transform 200ms ease-in;
 }
 .fancy-link:hover::after {
-  transform: scaleX(1);
+transform: scaleX(1);
 }
 /* Remove underline for Navigation and color  set to White */
 a {
-  color: #ffff;
-  text-decoration: none;
+color: #ffff;
+text-decoration: none;
 }
 /* Styling the Navigation */
 .button {
-  border: 1px solid #3498ab;
-  background: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  margin: 10px;
+border: 1px solid #3498ab;
+background: none;
+padding: 10px 20px;
+font-size: 20px;
+cursor: pointer;
+margin: 10px;
 }
 .button-zero {
-  color: #3498db;
+color: #3498db;
 }
 .button-zero:hover {
-  color: #fff
+color: #fff
 }
 .button {
-  cursor: pointer;
-  border: 0;
-  background: #ee6352;
-  color: white;
-  padding: 1em 1.5em;
-  position: relative;
-  z-index: 1;
+cursor: pointer;
+border: 0;
+background: #3498db;
+color: white;
+padding: 1em 1.5em;
+position: relative;
+z-index: 1;
 }
 .button + .button {
-  margin-left: 1em;
+margin-left: 1em;
 }
 .button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: -1;
-  transition: transform 200ms ease-in;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+z-index: -1;
+transition: transform 200ms ease-in;
 }
 .button-one::after {
-  transform: scaleX(0);
-  transform-origin: right;
+transform: scaleX(0);
+transform-origin: right;
 }
 .button-one:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+transform: scaleX(1);
+transform-origin: left;
 }
 .button-two::after {
-  transform: scaleY(0);
-  transform-origin: bottom;
+transform: scaleY(0);
+transform-origin: bottom;
 }
 .button-two:hover::after {
-  transform: scaleY(1);
-  transform-origin: top;
+transform: scaleY(1);
+transform-origin: top;
 }
 .button-three::after {
-  transform: scaleY(0);
+transform: scaleY(0);
 }
 .button-three:hover::after {
-  transform: scaleY(1);
+transform: scaleY(1);
 }
-.chuong h1 {
-  color: #f71f02;
-}
-/* Styling About Me Content */
-.bg-image {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  font-family: sans-serif;
-  background-image: url("../Pro-Portfolio/assets/images/ui-ux.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
+/* About Me Section */
+.About-Me {
   width: 100%;
-  height: 40vh;
-  margin: auto;
-}
-.chuong {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 600px;
-  padding: 30px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 15px 50px rgba(0,0,0,.2);
-  background-color: salmon;
-}
-
-.bg-images {
-  background-image: url("./assets/images/ui-ux.jpeg");
+  display: flex;
+  background: #ffc728;
+  padding: 0px;
+  background-image: url("./assets/images/followbg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
-
-
-
 }
-.circle {
-  width: 200px;
-  height: 200px;
-  background: url(./assets/images/chuong\ vo.jpg);
-  border-radius: 50%;
+
+
+.About-MePara1 {
+  flex: 1;
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("./assets/images/followbg.jpg");
   background-size: cover;
-  float: left;
-  shape-outside: circle();
-  margin: 30px 30px 30px 0;
-  
+  background-attachment: fixed;
+  background-position: 80%;
 }
-p {
-  margin: 0;
-  padding: 0;
-  line-height: 20px;
+.About-MePara2 {
+  flex: 4;
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
-.projects {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 600px;
-  padding: 20px;
-  margin: 1px;
-  flex-wrap: wrap;
+.About-MePara3 {
+  flex: 4;
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.About-MePara4 {
+  flex: 4;
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Projects {
+  position: absolute; left: 100px;
+  justify-content: flex-start;
+  margin: 140px 0 0 0;
+  font-size: 20px;
   display: flex;
-  justify-content: space-between;
-  
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap; 
+
 }
 .My-Projects {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background: coral;
-  font-family: consolas;
-  padding: 0;
-  margin: 0 30%;
-  height: 60px;
-  width: 40%;  
+  font-family: 'Roboto', sans-serif;
+  
 }
-.projects h3 {
-  position: relative; left: 150px;
-  display: inline-block;
-  padding: 15px 30px;
+.Projects h2 {
   color: #2196f3;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
-  width: 50%;
-  
+ 
 }
-.projects h3:hover {
+.Projects h2:hover {
   color: #255784;
   background: #80f321;
   box-shadow: 0 0 10px #1ef33a, 0 0 40px #2196f3, 0 0 80px #2196f3;
   transition-delay: 0s;
 }
-/* Styling the Robot Content */
-.robot {
-  position:absolute; left:-50%;
-  height: 500px;
-  width: 1200px;
+.Projects h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+/* Styling the Images */
+.first-img {
   display: flex;
-  object-fit: cover;
-  object-position: top right;
-  
+  flex-wrap: row;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  position: absolute; left: 1000px;
+  margin: -63px auto 0 auto;
 }
 
-.robotword {
-  width: 100%;
-  position: absolute;
-  margin-top: auto;
-}
-.robotword h1, h2 {
-  text-align: center;
-  color: lightblue;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-/* Styling Horiseon Content */
-.horiseonword h1, h2 {
-
-  position: relative; 
-  text-align: center;
-  color: red;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
-.horiseon {
-  position: relative; right: 15.599999999999999999999999%;
-  height: 250px;
-  width: 600px;
+.second-img {
   display: flex;
-  margin: 620px auto;
-  object-fit: cover;
-  object-position: top right;
-  bottom: -15px;
-}
-.horiseonword {
-  width: 46%;
-  position: absolute; top: 138%;
-  font-family: 'Times New Roman', Times, serif;
-}
-/* Styling Run-Buddy Content */
-.runbuddyword h1, h2 {
+  flex-wrap: row;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  position: absolute; left: 500px;
+  margin: -63px auto 0 auto;
+  width: 500px;
+  height: 793px;
 
-  position: relative; 
-  text-align: center;
-  color: red;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
 }
-.runbuddy {
-  position: absolute; top: -106px;
-  height: 250px;
-  width: 600px;
+.third-img {
   display: flex;
+  flex-wrap: flex;
+  flex-direction: row;
+  align-items: right;
   justify-content: center;
-  align-items: center;
-  margin: 1199px 0 0 955px;
+  position: absolute; left: 1000px;
+  margin: 331px auto 0 auto;
+  height: 400px;
+  width: 612px;
   object-fit: cover;
-  object-position: top right;
-  
-  
 }
-.runbuddyword {
-  max-width: 10%;
-  position: absolute; top: 10%;
-  margin: 1199px 0 1000px 955px;
-  font-family: 'Times New Roman', Times, serif;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  padding: 160px; 
+.first-img:hover {
+  opacity: .5;
+  transition: .9;
+  display: flex;
+}
+.second-img:hover {
+  opacity: .5;
+  transition: .9;
+  display: flex;
+}
+.third-img:hover {
+  opacity: .5;
+  transition: .9;
+  display: flex;
 }
 footer{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: absolute;
+  position: absolute; top: 400px;
   bottom: -650px;
   left: 0;
   right: 0;
-  background: #111;
   height: auto;
   width: 100vw;
   font-family: "Open Sans";
   padding-top: 40px;
   color: coral;
-  background-image: url("./assets/images/ui-ux.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
-  padding: 2px 6px 4px 6px; color: coral; background-color: royalblue;
 }
 .footer-content{
   display: flex;
@@ -323,10 +268,6 @@ footer{
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: url("./assets/images/ui-ux.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -375,31 +316,25 @@ footer{
 
 }
 
-@media all and (max-width: 980px) {
-  body {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-  }
 
-  body .content {
-    width: 100%;
-    text-align: center;
-  }
 
-  body .content a {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
 
-  footer h3, footer ul {
-    text-align: center;
-    width: 100%;
-  }
-  
-  .footer-content {
-    flex: 0 70%;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .About-Me {
+    flex-direction: column;
   
 }
