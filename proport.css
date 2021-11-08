@@ -147,7 +147,6 @@ transform: scaleY(1);
   background-attachment: fixed;
   background-position: 80%;
   flex-wrap: wrap;
-
 }
 
 .About-Me .About-MePara1 p {
@@ -198,6 +197,12 @@ transform: scaleY(1);
   display: flex;
   flex-wrap: wrap;
 }
+.Projects h2 p {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Style the Projects Section */
 .Projects {
   position: absolute; left: 100px;
@@ -206,15 +211,11 @@ transform: scaleY(1);
   font-size: 20px;
   display: flex;
   transform: translate(-50%, -50%);
-  flex-wrap: wrap; 
-
-
 }
 .My-Projects {
   display: flex;
   font-family: 'Roboto', sans-serif;
   flex-wrap: wrap;
-  
 }
 .Projects h2 {
   color: var(--inside-color);
@@ -226,8 +227,6 @@ transform: scaleY(1);
   flex-wrap: wrap;
   width: 350px; height: 100px;
   margin: 0 -200px;
-  
- 
 }
 .Projects h2:hover {
   color: var(--inside-color);
@@ -251,21 +250,19 @@ transform: scaleY(1);
   flex-direction: column;
   align-items: right;
   justify-content: right;
-  position: absolute; left: 1000px;
+  position: absolute; left: 800px;
   margin: -63px auto 0 auto;
 }
-
 .second-img {
   display: flex;
   flex-wrap: flex;
   flex-direction: row;
   align-items: right;
   justify-content: right;
-  position: absolute; left: 500px;
+  position: absolute; left: 300px;
   margin: -63px auto 0 auto;
   width: 500px;
   height: 793px;
-
 }
 .third-img {
   display: flex;
@@ -273,7 +270,7 @@ transform: scaleY(1);
   flex-direction: row;
   align-items: right;
   justify-content: center;
-  position: absolute; left: 1000px;
+  position: absolute; left: 800px;
   margin: 331px auto 0 auto;
   height: 400px;
   width: 612px;
@@ -296,7 +293,7 @@ transform: scaleY(1);
 }
 /* Styling the footer */
 footer{
-  position: absolute; top: 1200px;
+  position: absolute; top: 500px;
   bottom: -450px;
   height: 10vw;
   width: 0;
@@ -305,7 +302,7 @@ footer{
   color: coral;
   display: flex;
   flex-wrap: wrap;
-  margin: auto 300px;
+  margin: 450px 0 0 250px;
 }
 .footer-content{
   display: flex;
@@ -370,7 +367,7 @@ footer{
   flex-wrap: wrap;
 }
 
-
+/* Set up the Screen Resolution to fit on different devices */
 @media screen and (max-width: 1000px) {
 footer {
   display: flex;
@@ -380,14 +377,21 @@ footer {
 .img-area {
   padding-left: 500px;
   position:absolute; left: -500px
- 
-
-  }
-} 
-
+  } 
+header .content button{
+  font-size: 10px;
+  margin: 0 0;
+  padding: 5px;
+}
+header .content .fancy-link {
+  font-size: 10px;
+  margin: 0 0;
+  padding: 5px;
+}
+}
 @media screen and (max-width: 700px) {
   footer {
     display: flex;
     position: absolute; left: 200px;
-    }
-  } 
+  }
+}
