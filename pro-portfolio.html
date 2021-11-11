@@ -4,48 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./proport.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Chuong Professional Portfolio </title>
 </head> 
 <body>
-    <!-- Navigation for About Me, Contact Info and Professional Work -->
-    <header>
-        <h1>
-            <a href="./pro-portfolio.html"> Chuong Vo Portfolio </a>
-            <br />
-            <img src="./assets/images/720X720-charmander-2.jpg" alt="If I were a Pokemon" class="charmander" />
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#About-Me">About Me</a>
-                </li>
-                <li>
-                    <a href="/">Contact Info</a>
-                </li>
-                <li> 
-                    <a href="/">Projects</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</body>
-
-<!-- About me section -->
-<section id="About-Me" class="hero">
-    <div class="hero-cta">
-        <h2>About me
-        </h2>
-            <p>
-                Hi there, my name is Chuong Vo, I'm currently working as a Senior IT Support Role and decided to move into Software Developing. I love programming/coding and 
-                create new design, and I believe going into programming would help me do the things that I love to do. I created 5 websites to showcase my experience, knowledge and creativity.
-                Please scroll down or click on "Project" on top right to learn more!
-            </p>
+  <!-- head up header and navigation -->
+  <header>
+    <div class="bg-images">
+    <div class="content">
+        <a class="fancy-link" href="./pro-portfolio.html">Chuong Vo Portfolio</a>
+        <div>
+            <a href="#About-Me">
+            <button class="button button-one">About Me</a>
+            </button>
+            <a href="#Contact-Me">
+            <button class="button button-two">Contact Info</a>  
+            </button>
+            <a href="#My-Projects">
+            <button class="button button-three">My Projects</a>
+            </button>
+        </div>
     </div>
-</section>
+    </div>
+  </header>
 
-<article class="ux">
-    <h3> UI/UX Project </h3>
-    <img src="./assets/images/ui-ux.jpeg" alt="ui/ux design" class="first"/>
-</article>
+<!-- Setting up the About Me Page -->
+<div class="About-Me">
+  <div class="About-MePara1">
+    <p>About Me
+    </p>
+    <img src="./assets/images/chuong vo.jpg" alt="Chuong Picture" width="100px" height="100px">
+  </div>
 
+  <div class="About-MePara2">
+    <p> Having working in Information Technologies over 10 years and finally have the flexibility to dive into Software Programming. 
+      The chance to learn, troubleshoot, thinking of creative way to fix bugs excites me everyday. I built 3 websites to showcase my experience, knowledge and creativity.
+      Please scroll down or click on "Project" on top right to learn more about me and how I can be a beneficial to your company!
+    </p>
+  </div>
+  
+  <div class="About-MePara3">
+    <p> 
+    </p>
+  </div>
+    <div class="About-MePara4">
+      <p> 
+      </p>
+    </div>
+
+  <div class="Projects">
+    <h2 id="#My-Projects">Projects</h2>
+    <p>Search Engine, Robot, Workout Project!
+    </p>
+    <div class="img-area">
+      
+      <a href="#"><img class="first-img" src="assets/images/robotai.jpg" alt="Robot Image"></a>
+      <a href="https://vohoang2005.github.io/horiseon/"><img class="second-img" src="./assets/images/Horiseon.png" alt="Horiseon Project"></a>
+      <a href="https://vohoang2005.github.io/run-buddy/"><img class="third-img" src="./assets/images/Newrunbuddy.PNG" alt="picture of Project Run Buddy"></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+      <h4>Contact Info</h4>
+      <h4 id="Contact-Me">Cell Phone: (408)391-6907</h4>
+      <h4>Email: vohoang2005@gmail.com</h4>
+      <h4>You can also reach me on Social Media</h4>
+      <ul class="socials">
+          <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="mailto: vohoang2005@gmail.com"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/chuonghvo/"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+  </div>
+</footer> 
+</body>
 </html>
