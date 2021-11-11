@@ -17,12 +17,11 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
     top: 0;
     background-image: url("../pro-portfolio/assets/images/designer\ background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 50%;
+    background-position: 80%;
 }
 
 header h1 {
