@@ -14,19 +14,7 @@ background-image: url("./assets/images/followbg.jpg");
 background-size: cover;
 background-attachment: fixed;
 background-position: 80%;
-}
-/* Header and Nav Styles Start */
-header {
-    padding: 20px 35px;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
-    background-image: url("../pro-portfolio/assets/images/designer\ background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
+
 }
 /* Styling the Background Image for the Navigations */
 .content {
