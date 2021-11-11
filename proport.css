@@ -14,8 +14,7 @@ background-image: url("./assets/images/followbg.jpg");
 background-size: cover;
 background-attachment: fixed;
 background-position: 80%;
-
-<<<<<<< HEAD
+}
 /* Header and Nav Styles Start */
 header {
     padding: 20px 35px;
@@ -28,8 +27,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-=======
->>>>>>> bdc4acb503092aacef29fcc61d1a1cc42f4afb4e
 }
 /* Styling the Background Image for the Navigations */
 .content {
