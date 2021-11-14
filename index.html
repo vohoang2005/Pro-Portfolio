@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title> Chuong Professional Portfolio </title>
-</head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700" rel="stylesheet"> <!-- Font style from googleapis -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Khula" rel="stylesheet"> <!-- Font style from googleapis -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Chuong Vo Portfolio</title>
+</head>
+
 <body>
-  <!-- head up header and navigation -->
-  <header>
-   
-    <div class="content">
-        <a class="fancy-link" href="./pro-portfolio.html">Chuong Vo Portfolio</a>
-        <div>
-            <a href="#All-Me">
-            <button class="button button-one">About Me</a>
-            </button>
-            <a href="#Contact-Me">
-            <button class="button button-two">Contact Info</a>  
-            </button>
-            <a href="#Projects">
-            <button class="button button-three">My Projects</a>
-            </button>
+    <header>
+        <span class="span-background title"> <!-- Class for title background -->
+            <h1>Chuong Vo</h1><img src="./assets/images/chuong vo.jpg" width="200px" height="200px">
+        </span>
+        <nav>
+            <ul class="nav-effects"> <!-- Header nav bar -->
+                <li>
+                    <!-- Anchor elements -->
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Here Section -->
+    <!-- Hero section will have the image as background -->
+    <section class="hero">
+        <!-- Flex Container-->
+        <div class="hero-subtitle">           
+                <!-- Span used to provide a span background as well as change the opacity of both the span and the text -->
         </div>
-    </div>
-    </div>
-  </header>
+    </section>
 
-<!-- Setting up the About Me Page -->
-<div id="All-Me" class="About-Me">
-  <div class="About-MePara1">
-    <p>About Me
-    </p>
-    <img src="./assets/images/chuong vo.jpg" alt="Chuong Picture" width="400px" height="400px">
-  </div>
+    <!-- About Me -->
+    <article> 
+        <div id="about-me" class="about-me-wrapper"> 
+            <div class="about-me-grid-container">
+                <div class="about-me-item about-me-title"> 
+                    <p> About me </p>
+                </div>
+                <div class="about-me-item p1">
+                    <p>Having working in Information Technologies over 10 years and finally have the flexibility to dive into Software Programming. 
+                        The chance to learn, troubleshoot, thinking of creative way to fix bugs excites me everyday. I built 3 websites to showcase my experience, knowledge and creativity.
+                        Please scroll down or click on "Project" on top right to learn more about me and how I can be a beneficial to your company!</p>
+                </div>
+            </div>
+        </div> 
+    </article>
 
-  <div class="About-MePara2">
-    <p> Having working in Information Technologies over 10 years and finally have the flexibility to dive into Software Programming. 
-      The chance to learn, troubleshoot, thinking of creative way to fix bugs excites me everyday. I built 3 websites to showcase my experience, knowledge and creativity.
-      Please scroll down or click on "Project" on top right to learn more about me and how I can be a beneficial to your company!
-    </p>
-  </div>
+    <!-- Work Projects -->
+    <article>
+        <div id="work" class="work-wrapper"> 
+            <div class="work-grid-container"> 
+                <div class="work-item work-title"> 
+                    <p> Projects </p>
+                </div>
+                
+                <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
+                    <span class="span-background">
+                        <a href="/"></a><h3>Horiseon Search Engine</h3>
+                        <span class="lower-text">HTML/CSS</span> 
+                    </span>
+                </div>
+                
+                <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
+                    <span class="span-background">
+                        <h3>Run Buddy</h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
+                    <span class="span-background">
+                        <h3>Password Generator</h3>
+                        <span class="lower-text">CSS/Javascript</span>
+                    </span>
+                  <a href="https://vohoang2005.github.io/Password-Generator/"></a>
+                </div>             
 
-<section id="Projects" class="project">
-  <h2>Projects</h2>
-  <div class="images"><h3>Robot Gladiator</h3>
-    <a href="https://vohoang2005.github.io/robot-gladiators/"><img class="first-img" src="./assets/images/robot.jpg" width="1400px" height="400px" alt="Robot Gladiator"></a>
-  </div>
-  <div class="imagess"> <h3>Workout Plan</h3>
-    <a href="https://vohoang2005.github.io/run-buddy/"><img class="second-img" src="./assets/images/Newrunbuddy.PNG" width="700px" height="400px" ></a>
-  </div>
-  <div class="imagesss"> <h3>Search Engine</h3>
-    <a href="https://vohoang2005.github.io/horiseon/"><img class="third-img" src="./assets/images/Horiseon.png" width="700px" height="400px" ></a>
-  </div>
-</section>
-  
-<!-- Footer -->
-<footer>
-  <div id="Contact-Me" class="footer-content">
-      <div>
-          <a href="mailto:vohoang2005@gmail.com">Email Me</a>
-          <br>
-          <a href="https://github.com/vohoang2005">Github</a>
-          <br>
-          <a href="https://www.linkedin.com/in/chuonghvo/">LinkedIn</a>
-         
-      </div>
-  </div>
-</footer> 
+                <div class="work-item-project ghost-item">
+                    <span class="span-background">
+                        <h3>New Projects coming soon!</h3>
+                        <span class="lower-text">TBD</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div id="contact-me" class="footer-wrapper"> 
+            <div class="footer-container"> 
+                
+                <div class="footer-grid-item contact-me"> 
+                    Contact Me
+                </div>
+                <div class="footer-grid-item phone">
+                    <a href="tel:408-391-6907" class="nav-effects">408-391-6907</a>
+                </div>
+                <div class="footer-grid-item email"> 
+                    <a href="mailto:vohoang2005@gmail.com">vohoang2005@gmail.com</a>
+                </div>
+                <div class="footer-grid-item git-hub"> 
+                    <a href="https://github.com/vohoang2005" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
-
 

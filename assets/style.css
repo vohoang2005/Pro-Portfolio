@@ -1,227 +1,554 @@
-/* setting the default color with var */
-:root {
-  --inside-color: darkblue;
-  --background-color: #ffff;
-}
-/* setting the box sizing style */
+/* Remove default html margin, padding and assign box-sizinz as border-box to all */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* setting background image */
-html {
-background-image: url("./images/followbg.jpg");
-background-size: cover;
-background-attachment: fixed;
-background-position: 80%;
+/* Global variable definitions */
+:root {
+--header-footer-background-color: #404040;
+--lightskyblue: lightskyblue;
+--lightgray: lightgray;
+--about-me-work-border: #333366;
+--rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
 }
-
-/* Styling the Background Image for the Navigations */
-.content {
-display: flex;
-flex-wrap: wrap;
-margin: auto;
+/* Style Header and Navigation */
+header {
+display: flex; 
 justify-content: space-between;
-padding: 0 30px;
+flex-wrap: wrap;
+list-style: none;
+background-color: var(--header-footer-background-color); 
+}
+
+header nav ul {
+display: flex; 
+flex-wrap: wrap;
+justify-content: flex-end;
 align-items: center;
 list-style: none;
-background-image: url("./assets/images/followbg.jpg");
-background-size: cover;
-background-attachment: fixed;
-background-position: 80%;
-position: sticky;
-position: -webkit-sticky;
+padding-right: 0px;
 }
-/* Styling Chuong Vo Portfolio */
-.fancy-link {
+
+header nav ul li {
+font-size: 1.8vw;
+padding: 10px 15px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+/* Style the Navigation */
+header a {
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 5px;
 text-decoration: none;
-color: var(--inside-color);
-position: relative;
+border-bottom: 2px solid var(--lightskyblue);
+color: var(--lightskyblue);
+}
+
+/* Start of body code */
+body{
+background-color: var(--lightgray); 
+font-family: 'Martel', serif;
+}
+
+/* Start of footer code */
+footer {
+background-color: var(--header-footer-background-color); 
+color: var(--lightskyblue); 
+}
+
+footer a {
+text-decoration: none;
+border-bottom: 2px solid var(--lightskyblue);
+color: var(--lightskyblue); 
+font-size: 1.8vw; 
+font-weight: bold;
+}
+
+/* Style Header nav hover */
+.nav-effects a:hover{ 
+color: var(--lightskyblue);
+font-weight: bold;
+text-shadow: 0px 0px 20px var(--lightskyblue);
+}
+
+/* Style work projects hover */
+.work-grid-container div:hover{ 
+mix-blend-mode: color-burn;
+}
+
+/* Footer hover */
+.footer-container a:hover{
+color: var(--lightskyblue);
+
+font-weight: bold;
+text-shadow: 0px 0px 20px var(--lightskyblue);
+}
+
+.hero { 
+height: 300px;
+background-image: url("./images/followbg.jpg");
+border-bottom-left-radius: 30px 30px; 
+border-bottom-right-radius: 30px 30px;
+background-size: cover; 
+background-position:  100% 13%; 
+background-attachment: fixed; 
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+flex-direction: row; 
+align-items: flex-end;
+
+}
+
+.hero-subtitle { 
+padding-bottom: 15px;
+padding-right: 15px;
+}
+
+.about-me-wrapper { 
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-font-size: 40px;
-font-weight: bold;
+justify-content: center;
+margin-top: 50px;
+}
+
+.about-me-grid-container {
+width: 80%; 
+display: grid;
+grid-template-columns: 1fr repeat(3, 2fr);  
+grid-template-rows: repeat(4, 1fr); 
+gap: 10px 10px; 
+}
+
+.about-me-item.about-me-title { 
+padding-top: 0px;
+font-size: 35px;
+grid-row: 1 / span 4;
+padding-right: 10px;
+text-align: right;
+border-right: 2px solid var(--about-me-work-border);
+}
+
+.about-me-item.p1 {
+padding-left: 10px;
+grid-column: 2 / span 3;
+grid-row: 1 / span 2;
+}
+
+.about-me-item.p2 {
+padding-left: 10px;
+grid-column: 2 / span 3;
+grid-row: 3 / span 2;
+}
+
+.work-wrapper { 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+justify-content: center;
+margin-top: 50px;
 
 }
-.fancy-link::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-width: 100%;
-height: 2px;
-background: currentColor;
-transform: scaleX(.01);
-transform-origin: left;
-transition: transform 200ms ease-in;
+.work-grid-container {
+width: 80%;
+display: grid;
+grid-template-columns: 1fr repeat(3, 2fr); 
+grid-template-rows: repeat(10, 1fr);
+gap: 10px 10px; 
 }
-.fancy-link:hover::after {
-transform: scaleX(1);
+
+.work-item.work-title {
+padding-top: 10px;
+font-size: 35px;
+grid-row: 1 / span 9;
+text-align: right;
+padding-right: 10px;
+border-right: 2px solid var(--about-me-work-border);
 }
-/* Remove underline for Navigation and color  set to White */
-a {
-color: var(--background-color);
-text-decoration: none;
+
+.work-item-project.challenge-1-refactor { 
+grid-column: 2 / span 2;
+grid-row: 1 / span 6;
+background-image: url("./images/Horiseon.png");
+background-size: cover; 
+display: flex; 
+align-items: flex-end; 
+padding-left: 0px;
+padding-bottom: 15px;
+text-align: left;
+border: .25vw solid var(--rgba-border-color-opacity);
 }
-/* Styling the Navigation */
-.button {
-border: 1px solid var(--inside-color);
-background: none;
-padding: 10px 20px;
-font-size: 20px;
-cursor: pointer;
-margin: 10px;
+
+.work-item-project.run-buddy {
+grid-column: 3 /span 1;
+grid-row: 7 / span 3;
+background-image: url("./images/Newrunbuddy.PNG");
+background-size: cover;
+display: flex; 
+align-items: flex-end; 
+padding-left: 0px;
+padding-bottom: 15px;
+text-align: left;
+border: .25vw solid var(--rgba-border-color-opacity);
 }
-.button-zero {
-color: var(--inside-color);
+
+.work-item-project.password-generator {
+grid-column: 2 / span 1;
+grid-row: 7 / span 3; 
+background-image: url("./images/PasswordGenerator.PNG");
+background-size: cover;
+display: flex; 
+align-items: flex-end; 
+padding-left: 0px;
+padding-bottom: 15px;
+text-align: left;
+border: .25vw solid var(--rgba-border-color-opacity);
 }
-.button-zero:hover {
-color: var(--background-color)
+
+.work-item-project.ghost-item {
+grid-column: 4 / span 1;
+opacity: 0.7;
 }
-.button {
-cursor: pointer;
-border: 0;
-background: var(--inside-color);
-color: var(--background-color);
-padding: 1em 1.5em;
+
+
+/* Start of span code */
+.span-background { 
+background-color: var(--lightskyblue);
 position: relative;
-z-index: 1;
+line-height: 1.5;
+padding-left: 8px;
+padding-right: 8px;
+border-radius: 5%;
+opacity: .8;
 }
-.button + .button {
-margin-left: 1em;
+
+.span-background.title { 
+margin-top: 10px;
+margin-bottom: 20px;
 }
-.button::after {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0,0,0,0.5);
-z-index: -1;
-transition: transform 200ms ease-in;
+
+.span-background.opacity{
+opacity: .9; 
+font-size: 30px;
 }
-.button-one::after {
-transform: scaleX(0);
-transform-origin: right;
+
+.span-background.lower-text {
+font-size: x-small;
 }
-.button-one:hover::after {
-transform: scaleX(1);
-transform-origin: left;
+
+.footer-wrapper { 
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 50px;
 }
-.button-two::after {
-transform: scaleY(0);
-transform-origin: bottom;
+
+.footer-container { 
+width: 80%;
+display: grid;
+
+grid-template-columns: 1fr repeat(3, 2fr); 
+grid-template-rows: repeat(3,2fr);
+gap: 20px 20px; 
 }
-.button-two:hover::after {
-transform: scaleY(1);
-transform-origin: top;
+
+.footer-grid-item {
+text-align: center;
 }
-.button-three::after {
-transform: scaleY(0);
+
+.footer-grid-item.contact-me {
+padding-top: 10px;
+font-size: 35px;
+grid-row: 1 / span 3;
+text-align: right;
+padding-right: 10px;
+border-right: 2px solid var(--lightskyblue);
 }
-.button-three:hover::after {
-transform: scaleY(1);
+
+.footer-grid-item.phone{
+
+grid-row: 2;
 }
-/* About Me Header Section */
-.About-Me {
-  width: auto;
-  height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 400px 0;
-  font-family: 'Roboto', sans-serif;
+
+.footer-grid-item.email{
+grid-row: 2;
 }
-.About-MePara1 {
-  flex: 1;
-  padding: 30px;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
-  background-image: url("./assets/images/followbg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
-  flex-wrap: wrap;
+
+.footer-grid-item.git-hub{
+grid-row: 2;
 }
-/* Decorate the About Me */
-.About-Me .About-MePara1 p {
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--inside-color);
-  display: flex;
-  flex-wrap: wrap;
-  text-transform: uppercase;
-  text-decoration: none;
+
+@media screen and (max-width: 980px) {
+
+
+header {
   justify-content: center;
 }
-/* Decorate the Charizard Paragraph */
-.About-Me .About-MePara2 p {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  position: absolute;
-  margin: 150px -1300px;
-  width: 1000px; height: 200px;
-  font-size: 24px;
+
+header h1 {
+
+  padding-left: 0px;
 }
-/* Decorate Charizard */
-.About-Me .About-MePara1 img {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
+
+
+.hero-subtitle {
+  padding-right: 30px;
 }
-/* Decorate the Project */
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: absolute; top: 1000px;
-  width: 99.91%; height: 50px;
-  align-items: center;
-  font-size: 24px;
+
+.span-background.opacity{
+  font-size: 25px;
 }
-.project h3 {
-  display: flex;
-  flex-wrap: flex;
-  position: absolute; top: 50px;
-  left: 20px;
+
+.hero {
+background-attachment: scroll;
+}
+
+.about-me-wrapper {
+  margin-top: 20px;
+}
+
+.about-me-grid-container {
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px 5px; 
+}
+
+.about-me-item.about-me-title {
+  padding-top: 0px;
+  font-size: 25px;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  text-align: center;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  border-right: none;
+  border-bottom: 2px solid var(--about-me-work-border);
+}
+
+.about-me-item.p1 {
+  padding-top: 5px;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+}
+
+.about-me-item.p2 {
+  padding-top: 5px;
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 2;
+ 
+  padding-bottom: 10px;
+}
+
+.work-grid-container .work-item-project.ghost-item:hover{
+  opacity: .8;
+}
+
+.footer-wrapper {
+  margin-top: 20px;
+}
+
+.footer-container { 
+  width: 100%;
   
-}
-/* Decorate Robot Gladiator */
-.project .images .first-img {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  position: absolute; bottom: -400px;
-  margin: 0 -750px;
-}
-.project .imagess {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  position: absolute; bottom: -820px;
-  left: 269px;
-}
-.project .imagesss {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  position: absolute; bottom: -820px;
-  left: 970px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.5px 2.5px; 
 }
 
-footer .footer-content {
-  margin: 1400px 0 0 -1700px;
-  font-weight: bold;
-  font-size: 24px;
+.footer-grid-item.contact-me {
+  padding-top: 0px;
+  font-size: 25px;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  text-align: center;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  border-right: none;
+  border-bottom: 2px solid var(--lightskyblue);
+  padding-left: 25px;
 }
 
-footer .footer-content a {
-  display: column;
-  flex-wrap: column;
-  justify-content: space-between;
-  width: 800px; height: 150px;
+.footer-grid-item.phone{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.footer-grid-item.email{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
+  padding-left: 25px;
+
+}
+
+.footer-grid-item.git-hub{
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
+  width: 20px;
+  padding-left: 80px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  header a {
+    
+    font-size: 3vw;
+  }
+
+  footer a {
+    font-size: 3vw;
+  }
+
+  .nav-effects a:hover{
+      font-size: 3vw; 
+  }
+
+  .footer-container a:hover{
+    font-size: 1.8vw;
+  }
+
+  .hero {
+    background-attachment: scroll;
+  }
+    
+  .about-me-grid-container {/*CSS Grid*/
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: .5fr repeat(4, 1fr);
+    gap: 5px 5px; 
+  }
+
+  /* Target the about me text only */
+  .about-me-item.about-me-title {
+    padding-top: 0px;
+    font-size: 25px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-right: none;
+    border-bottom: 2px solid var(--about-me-work-border);
+    align-self: start;
+  }
+
+  .about-me-item.p1 { 
+    padding-left: 0px;
+  }
+
+  .about-me-item.p2 { 
+    padding-left: 0px;
+  }
+
+  .work-wrapper {
+    margin-top: 15px;
+  }
+
+  .work-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-template-rows: .5fr repeat(10, 1fr);
+   
+    gap: 2.5px 2.5px;
+  }
+
+ 
+  .work-item.work-title {
+    font-size: 35px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid var(--about-me-work-border);
+    border-right: none;
+    align-self: start;
+  }
+
+  .work-item-project.challenge-1-refactor {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll; 
+  }
+
+  .work-item-project.run-buddy {
+    grid-column: 1 /span 3;
+    grid-row: 5 / span 2;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll; 
+  }
+  
+  .work-item-project.password-generator {
+    grid-column: 1 /span 3;
+    grid-row: 7 / span 1;
+    padding-top: 30px;
+    background-position: scroll;
+    text-align: center;
+  }  
+  .work-item-project.ghost-item {
+    grid-column: 1 /span 3;
+    grid-row: 11 / span 1;
+    background-image: url("../images/pexels-luizclas-556665.jpg");
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    opacity: 1;
+    background-position: scroll;
+    text-align: center;
+  }
+
+  .footer-wrapper { 
+  margin-top: 10px;
+  }
+}
+
+ 
+@media screen and  (max-width: 575px) {
+  header a {
+    font-size: 4vw;
+  }
+
+  header nav ul {
+    padding-right: 0px;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    padding: 2px 2px 2px 2px;
+  }
+
+  p{
+    font-size:5vw;
+  }
+
+  footer a {
+    font-size: 3.5vw;
+  }
+
+  .nav-effects a:hover{
+    font-size: 4vw; 
+  }
+
+  .footer-container a:hover{
+    font-size: 3.5vw;
+  }
+
+  .footer-container {
+    gap: 0px 0px;
+  }
+
+  .footer-grid-item.git-hub{ 
+    padding-left: 30px;
+  }
 }
