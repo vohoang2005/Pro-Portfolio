@@ -167,7 +167,7 @@ padding-top: 10px;
 font-size: 35px;
 grid-row: 1 / span 9;
 text-align: right;
-padding-right: 200px;
+padding-right: 0px;
 border-right: 2px solid var(--about-me-work-border);
 }
 
@@ -211,7 +211,7 @@ border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.RANDM {
-  grid-column: 2 / span 1;
+  grid-column: 4 / span 1;
   grid-row: 7 / span 3; 
   background-image: url("./images/randm.PNG");
   background-size: cover;
