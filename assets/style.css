@@ -224,7 +224,7 @@ border: .25vw solid var(--rgba-border-color-opacity);
   }
 
   .work-item-project.maintainable {
-    grid-column: 1 / span 1;
+    grid-column: 5 / span 1;
     grid-row: 7 / span 3; 
     background-image: url("./images/maintainable.PNG");
     background-size: cover;
