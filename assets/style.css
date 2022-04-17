@@ -184,6 +184,7 @@ text-align: left;
 border: .25vw solid var(--rgba-border-color-opacity);
 }
 
+/*
 .work-item-project.run-buddy {
 grid-column: 3 /span 1;
 grid-row: 7 / span 3;
@@ -196,7 +197,7 @@ padding-bottom: 15px;
 text-align: left;
 border: .25vw solid var(--rgba-border-color-opacity);
 }
-
+*/
 .work-item-project.password-generator {
 grid-column: 2 / span 1;
 grid-row: 7 / span 3; 
@@ -224,7 +225,7 @@ border: .25vw solid var(--rgba-border-color-opacity);
   }
 
   .work-item-project.maintainable {
-    grid-column: 6 / span 1;
+    grid-column: 3 / span 1;
     grid-row: 7 / span 3; 
     background-image: url("./images/maintainable.PNG");
     background-size: cover;
